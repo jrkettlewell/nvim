@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.autoformat = false
 vim.opt.winbar = "%=%m %f"
+vim.g.lazyvim_php_lsp = "intelephense"
