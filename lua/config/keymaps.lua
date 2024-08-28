@@ -49,3 +49,11 @@ wk.add({
   { "<leader>ghtn", "<cmd>GHNextThread<cr>", desc = "Next" },
   { "<leader>ghtt", "<cmd>GHToggleThread<cr>", desc = "Toggle" },
 })
+
+-- Keymaps for Gitsigns plugin-----------------------------------------------------------------------------------
+wk.add({
+  { "<leader>gp", group = "Git Preview", desc = "Git Preview" },
+  { "<leader>gpi", "<cmd>:Gitsigns preview_hunk_inline<CR>", desc = "Inline"},
+  { "<leader>gph", "<cmd>:Gitsigns preview_hunk<CR>", desc = "Hunk"},
+  { "<leader>gt", "<cmd>:Gitsigns toggle_current_line_blame<CR>", desc = "Toggle line blame"},
+})
