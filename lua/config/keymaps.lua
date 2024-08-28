@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+local wk = require("which-key")
 vim.keymap.set(
   "n",
   "<leader>sx",
@@ -9,9 +10,10 @@ vim.keymap.set(
   { noremap = true, silent = true, desc = "resume" }
 )
 
+
+-- Keymaps for the `github` plugin--------------------------------------------------------------------------------
 -- Unmap the existing `leader gh`
 vim.api.nvim_set_keymap("n", "<leader>gh", "", { noremap = true, silent = true })
-local wk = require("which-key")
 
 wk.add({
   { "<leader>g", group = "Git" },
