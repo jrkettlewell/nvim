@@ -16,3 +16,4 @@ nvim_lsp.phpactor.setup({
     ["language_server_worse_reflection.inlay_hints.types"] = true,
   },
 })
+
