@@ -18,3 +18,7 @@ wk.add({
   { "<leader>gvh", "<cmd>:Gitsigns preview_hunk<CR>", desc = "Hunk"},
   { "<leader>gt", "<cmd>:Gitsigns toggle_current_line_blame<CR>", desc = "Toggle line blame"},
 })
+
+wk.add({
+    {'<leader>dX', "<cmd>lua require'dap'.clear_breakpoints()<CR>", desc = "Clear all breakpoints"}
+})
