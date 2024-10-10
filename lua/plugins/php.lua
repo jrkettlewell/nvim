@@ -1,5 +1,12 @@
 return {
   {
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!).
+    build = "make install_jsregexp",
+  },
+  {
     -- Add neotest-pest plugin for running PHP tests.
     -- A package is also available for PHPUnit if needed.
     "nvim-neotest/neotest",
@@ -55,15 +62,6 @@ return {
     opts = {
       lsp_server = "intelephense",
       features = { null_ls = { enable = false } },
-    },
-    {
-      -- Add the blade-nav.nvim plugin which provides Goto File capabilities
-      -- for Blade files.
-      "ricardoramirezr/blade-nav.nvim",
-      dependencies = {
-        "hrsh7th/nvim-cmp",
-      },
-      ft = { "blade", "php" },
     },
   },
 }
