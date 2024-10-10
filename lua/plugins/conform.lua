@@ -3,7 +3,7 @@ return {
   optional = true,
   opts = {
     formatters_by_ft = {
-      php = { "php_cs_fixer" },
+      php = { "php-cs-fixer" },
       apex = { "prettierd", "prettier" },
       typescript = { "prettierd", "prettier", stop_after_first = true },
       javascript = { "prettierd", "prettier", stop_after_first = true },
