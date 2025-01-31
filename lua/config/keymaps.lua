@@ -22,3 +22,7 @@ wk.add({
 wk.add({
     {'<leader>dX', "<cmd>lua require'dap'.clear_breakpoints()<CR>", desc = "Clear all breakpoints"}
 })
+
+wk.add({
+    { "<leader>e", "<cmd>lua Snacks.picker.explorer()<CR>", desc="Snacks Explorer" }
+})

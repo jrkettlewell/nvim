@@ -6,3 +6,7 @@ debug
 foo.*
 *.log
 data
+after/.DS_Store
+lua/plugins/.DS_Store
+lua/.DS_Store
+.DS_Store
